@@ -1,11 +1,11 @@
-# 🏠 Smart Room Occupancy, Safety and Energy Optimization System
+# Smart Room Occupancy, Safety and Energy Optimization System
 
 > **MPCA Laboratory Project — 4th Semester CSE**
 > PES University EC Campus | Team 3 | Section: SEM 4-H
 
 ---
 
-## 👥 Team Members
+## Team Members
 
 | Name | SRN |
 |---|---|
@@ -15,13 +15,13 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 The **Smart Room Occupancy, Safety and Energy Optimization System** is an Arduino-based embedded system that automates room management using a set of basic sensors. It monitors occupancy, ambient light, temperature, and air quality to intelligently control electrical devices — reducing unnecessary energy consumption while ensuring occupant safety.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Occupancy Detection** — HC-SR04 ultrasonic sensor detects the presence of a person and controls lights/fans accordingly.
 - **Natural Light Sensing** — UV sensor measures ambient light and suppresses artificial lighting during daytime.
@@ -31,7 +31,7 @@ The **Smart Room Occupancy, Safety and Energy Optimization System** is an Arduin
 
 ---
 
-## 🧰 Hardware Components
+## Hardware Components
 
 | Component | Model | Function | Arduino Pin |
 |---|---|---|---|
@@ -49,7 +49,7 @@ The **Smart Room Occupancy, Safety and Energy Optimization System** is an Arduin
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 smart-room-system/
@@ -71,7 +71,7 @@ smart-room-system/
 
 ---
 
-## ⚙️ System Logic
+## System Logic
 
 ```
 START
@@ -96,7 +96,7 @@ START
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -126,7 +126,7 @@ Refer to [`docs/circuit_diagram.md`](docs/circuit_diagram.md) for the full wirin
 
 ---
 
-## 📊 Thresholds (Configurable in Code)
+## Thresholds (Configurable in Code)
 
 | Parameter | Default Value |
 |---|---|
@@ -138,7 +138,7 @@ These values can be modified at the top of `smart_room_system.ino`.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Add an LCD/OLED display for real-time sensor readout
 - Integrate Wi-Fi (ESP8266/ESP32) for remote monitoring
@@ -147,11 +147,4 @@ These values can be modified at the top of `smart_room_system.ino`.
 - Data logging to SD card
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
 *Submitted as part of the MPCA Laboratory Project, 4th Semester CSE, PES University EC Campus, 2026.*
