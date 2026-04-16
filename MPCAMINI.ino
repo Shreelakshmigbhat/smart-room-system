@@ -70,9 +70,9 @@ void loop() {
 
   // ---------- PRIORITY LOGIC ----------
 
-  // 🚨 1. DISTANCE ALERT (highest priority)
+  // 1. DISTANCE ALERT (highest priority)
   if (tooClose) {
-    Serial.println("⚠️ HAT JANA BHAI");
+    Serial.println("Too close");
 
     digitalWrite(BUZZER, HIGH);
     delay(300);
@@ -80,9 +80,9 @@ void loop() {
     delay(300);
   }
 
-  // 🔥 2. SMOKE ALERT
+  //  2. SMOKE ALERT
   else if (smoke) {
-    Serial.println("🔥 SMOKE AAGYA BRO, EXTINGUISHER ON KARNA PADEGA 🔥");
+    Serial.println("Smoke detected");
 
     for (int i = 0; i < 8; i++) {
       digitalWrite(BUZZER, HIGH);
@@ -92,24 +92,24 @@ void loop() {
     }
   }
 
-  // ❄️ 3. TEMPERATURE ALERT
+  //  3. TEMPERATURE ALERT
   else if (highTemp) {
-    Serial.println("❄️ Please turn on the AC");
+    Serial.println(" Please turn on the AC");
 
     digitalWrite(BUZZER, HIGH);
     delay(800);
     digitalWrite(BUZZER, LOW);
   }
 
-  // 🌞 4. SUNLIGHT ALERT
+  //  4. SUNLIGHT ALERT
   else if (brightSun) {
-    Serial.println("🌞 Close the curtains, too much sunlight!");
+    Serial.println("Close the curtains, too much sunlight!");
     digitalWrite(BUZZER, LOW);
   }
 
-  // ✅ NORMAL
+  // NORMAL
   else {
-    Serial.println("✅ All conditions normal");
+    Serial.println("All conditions normal");
     digitalWrite(BUZZER, LOW);
   }
 
